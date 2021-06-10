@@ -11,8 +11,9 @@ const router = Router();// what does this connect to
 
 router.get('/', async(req, res) => {
     const posts = await Post.findAll();
-    res.render('posts', { posts})
+    res.render('posts', {posts})
 });
+
 const postController = require('../controller')
 router.post('/');
 

@@ -51,7 +51,7 @@ app.route('/').get((request, response) => response.render('feed', {title:"Root r
 
 app.get('/posts', async (req,res) => {
     const posts = await Post.findAll()
-    res.render('posts', { posts: posts })
+    res.render('posts', { posts })
 })
     
 // app
